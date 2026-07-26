@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firstrun-proof"
+version = "0.1.0"
+description = "Clean-room verification for README quick-start workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "FirstRun Proof contributors" }]
+classifiers = ["Development Status :: 3 - Alpha", "Environment :: Console", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3"]
+
+[project.scripts]
+firstrun = "firstrun_proof.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

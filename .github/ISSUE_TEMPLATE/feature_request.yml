@@ -1,0 +1,25 @@
+name: Focused improvement
+description: Propose a concrete case for one existing tool.
+title: "[Improvement] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      description: Name the command, backend, report, or workflow this affects.
+    validations:
+      required: true
+  - type: textarea
+    id: case
+    attributes:
+      label: Failure case
+      description: What real check cannot be expressed today?
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Smallest useful change
+    validations:
+      required: true

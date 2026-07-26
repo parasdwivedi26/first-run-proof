@@ -1,0 +1,33 @@
+name: Bug report
+description: Report incorrect behavior or a crash.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the expected and actual result.
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Tool and command
+      placeholder: tool-command --option ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows 11, Python 3.12
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Remove credentials and private data.
+    validations:
+      required: true
